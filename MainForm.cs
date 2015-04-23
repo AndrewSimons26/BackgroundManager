@@ -24,5 +24,13 @@ namespace BackgroundManager {
         private void MonitorDropdown_SelectionChanged(object sender, EventArgs e) {
             GuiHandler.SelectMonitor();
         }
+
+        private void SelectDirectoryButton_Click(object sender, EventArgs e) {
+            GuiHandler.SelectDirectory();
+        }
+
+        private void ScanButton_Click(object sender, EventArgs e) {
+            GuiHandler.ScanDirectories();
+        }
     }
 }

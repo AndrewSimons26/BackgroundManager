@@ -32,7 +32,12 @@
             this.NumberOfMonitorValue = new System.Windows.Forms.TextBox();
             this.NumberOfMonitorLabel = new System.Windows.Forms.Label();
             this.UpdateMonitorInfoButton = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.SelectDirectoryButton = new System.Windows.Forms.Button();
+            this.DirectoryTextBox = new System.Windows.Forms.TextBox();
+            this.ScanButton = new System.Windows.Forms.Button();
             this.MonitorPanel.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // MonitorPanel
@@ -46,9 +51,9 @@
             this.MonitorPanel.Controls.Add(this.NumberOfMonitorValue);
             this.MonitorPanel.Controls.Add(this.NumberOfMonitorLabel);
             this.MonitorPanel.Controls.Add(this.UpdateMonitorInfoButton);
-            this.MonitorPanel.Location = new System.Drawing.Point(12, 256);
+            this.MonitorPanel.Location = new System.Drawing.Point(12, 290);
             this.MonitorPanel.Name = "MonitorPanel";
-            this.MonitorPanel.Size = new System.Drawing.Size(394, 294);
+            this.MonitorPanel.Size = new System.Drawing.Size(375, 260);
             this.MonitorPanel.TabIndex = 0;
             // 
             // MonitorYValue
@@ -118,16 +123,56 @@
             this.UpdateMonitorInfoButton.UseVisualStyleBackColor = true;
             this.UpdateMonitorInfoButton.Click += new System.EventHandler(this.UpdateMonitorInfoButton_Click);
             // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.ScanButton);
+            this.panel1.Controls.Add(this.DirectoryTextBox);
+            this.panel1.Controls.Add(this.SelectDirectoryButton);
+            this.panel1.Location = new System.Drawing.Point(397, 12);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(375, 260);
+            this.panel1.TabIndex = 1;
+            // 
+            // SelectDirectoryButton
+            // 
+            this.SelectDirectoryButton.Location = new System.Drawing.Point(22, 25);
+            this.SelectDirectoryButton.Name = "SelectDirectoryButton";
+            this.SelectDirectoryButton.Size = new System.Drawing.Size(100, 23);
+            this.SelectDirectoryButton.TabIndex = 0;
+            this.SelectDirectoryButton.Text = "Select Directory";
+            this.SelectDirectoryButton.UseVisualStyleBackColor = true;
+            this.SelectDirectoryButton.Click += new System.EventHandler(this.SelectDirectoryButton_Click);
+            // 
+            // DirectoryTextBox
+            // 
+            this.DirectoryTextBox.Location = new System.Drawing.Point(129, 27);
+            this.DirectoryTextBox.Name = "DirectoryTextBox";
+            this.DirectoryTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DirectoryTextBox.TabIndex = 1;
+            // 
+            // ScanButton
+            // 
+            this.ScanButton.Location = new System.Drawing.Point(22, 55);
+            this.ScanButton.Name = "ScanButton";
+            this.ScanButton.Size = new System.Drawing.Size(75, 23);
+            this.ScanButton.TabIndex = 2;
+            this.ScanButton.Text = "Scan";
+            this.ScanButton.UseVisualStyleBackColor = true;
+            this.ScanButton.Click += new System.EventHandler(this.ScanButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(784, 562);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.MonitorPanel);
             this.Name = "MainForm";
             this.Text = "Form1";
             this.MonitorPanel.ResumeLayout(false);
             this.MonitorPanel.PerformLayout();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -143,6 +188,10 @@
         private System.Windows.Forms.TextBox NumberOfMonitorValue;
         private System.Windows.Forms.Label NumberOfMonitorLabel;
         private System.Windows.Forms.Button UpdateMonitorInfoButton;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button ScanButton;
+        private System.Windows.Forms.TextBox DirectoryTextBox;
+        private System.Windows.Forms.Button SelectDirectoryButton;
     }
 }
 
